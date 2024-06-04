@@ -1,0 +1,280 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16pt;
+    line-height: 135%
+}
+
+h1 {
+    text-align: center;
+    color: #4f4f4f;
+}
+
+h2, h3 {
+    text-align: left;
+    color: #4f4f4f;
+}
+
+p {
+    text-align: left;
+}
+
+p.center {
+    text-align: center;
+}
+
+p.right {
+    text-align: right;
+}
+
+p.gras {
+    font-weight: bold;
+}
+
+p.code {
+    font-size: 24pt;
+    text-align: center;
+    margin: 0pt;
+    padding: 0pt;
+    font-weight: bold;
+}
+
+span.left {
+    float: left;
+}
+
+span.right {
+    float: right;
+}
+
+div.header {
+    border: none;
+    margin: 0px;
+    padding: 10px;
+    text-align: right;
+    background-color: #fdb52d;
+    color: white;
+    font-size: 16pt;
+    height: 50px;
+    line-height: 50px;
+}
+
+
+div.header a {
+    height: 50px;
+    background-color: #fdb52d;
+    display: inline-block;
+    border: 1px solid black;
+    color: white;
+    margin: 0px 5px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    padding: 0px 10px;
+}
+
+div.header a.retour {
+    background-color: tomato;
+}
+
+div.form-container {
+    border-radius: 12px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: max-content;
+    margin: 20px auto;
+    text-align: center;
+}
+
+div.fullwidth {
+    margin: 20px;
+}
+
+div.notes{
+    display: inline-block;
+}
+
+div.jour, div.nuit {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+div.jour {
+    background-color: Gainsboro;
+    cursor: pointer;
+    background-position: center;
+    background-size: 40px;
+    background-repeat: no-repeat;
+}
+
+div.nuit {
+    background-color: Transparent;
+}
+
+div.pierre {
+    background-image: url(pierre.svg);
+    color: transparent;
+}
+
+div.bois {
+    background-image: url(bois.svg);
+    color: transparent;
+}
+
+div.argent {
+    background-image: url(argent.svg);
+    color: transparent;
+}
+
+div.or {
+    background-image: url(or.svg);
+    color: transparent;
+}
+
+form h3 {
+    text-align: left;
+}
+
+input[type=text], input[type=number], input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=number].mini {
+    width: 100px;
+    margin: 8px 3px;
+}
+
+div.mini {
+    display: inline-block;
+    width: max-content;
+    vertical-align: middle;
+}
+
+input[type=time] {
+    margin: 8px 10px;
+    font-size: 16pt;
+}
+
+div.mail input[type=text] {
+    display: inline;
+    width: 250px;
+}
+
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16pt;
+}
+
+option {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a.gris {
+    color: #4f4f4f;
+}
+
+a.gris:hover {
+    color: #5f5f5f;
+}
+
+a.jaune, p.jaune {
+    color: #fdb52d;
+}
+
+a.logout {
+    font-size: 12pt;
+    margin-left: 10px;
+}
+
+input[type=submit], a.button {
+    height: 50px;
+    width: 260px;
+    background-color: #fdb52d;
+    display: block;
+    border: 1px solid black;
+    color: white;
+    font-size: 16pt;
+    margin: 10px auto;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+}
+
+a.retour {
+    background-color: tomato;
+}
+
+a.note {
+    width: 100px;
+}
+
+a.disabled {
+    background-color: grey;
+    cursor: default;
+}
+
+input[type=submit]:disabled {
+    background-color: #f3f3f3;
+}
+
+button#toggle-password {
+    background: none;
+    color: gray;
+    font-size: 12pt;
+    border: none;
+    cursor: pointer;
+    padding: 0px 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+math {
+    display: inline;
+    font-size: 24pt;
+}
+
+span.frac{
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+span.haut{
+    display: block;
+}
+
+span.bas{
+    display: block;
+    border-top: 2px solid;
+}
+
+div:has(+input[type="checkbox"]) span.bas {
+    display: none;
+}
+
+div:has(+input:checked) span.bas {
+    display: block;
+}
